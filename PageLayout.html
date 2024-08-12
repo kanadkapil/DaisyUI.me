@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Layout</title>
 </head>
 
@@ -58,62 +61,159 @@
     </nav>
     <!-- navbar *  -->
 
-<main class="mt-20">
-    <section>
-        <div class="mx-10">
-            <div class="my-4 gap-4 grid sm:grid-cols-12 grid-cols-1">
-                <!-- left col  -->
-                <div class="min-h-[920px] rounded-lg shadow-lg bg-violet-400 sm:col-span-9">
+    <main class="mt-20">
+        <section>
+            <div class="mx-10">
+                <div class="my-4 gap-4 grid sm:grid-cols-12 grid-cols-1">
+                    <!-- left col  -->
+                    <div class="min-h-[920px] rounded-lg shadow-lg sm:col-span-9">
 
-                    <!-- 1st row  -->
-                    <div class="grid sm:grid-cols-12 grid-cols-1 w-full mb-5">
-                        <div class="col-span-12 min-h-[520px] rounded-lg shadow-lg bg-pink-400 w-full">
-                        </div>
-                    </div>
-                    <!-- 1st row *  -->
-
-                    <!-- 2nd row  -->
-                    <div class="grid sm:grid-cols-12 grid-cols-1 w-full">
-                        <div class="col-span-12 min-h-[380px] rounded-lg shadow-lg bg-pink-400 w-full">
-                            <!-- child row  -->
-                            <div class="grid sm:grid-cols-3 gap-4 ">
-                                <div class="min-h-[380px] rounded-lg shadow-lg bg-lime-400">
-                                </div>
-                                <div class="min-h-[380px] rounded-lg shadow-lg bg-cyan-400">
-                                </div>
-                                <div class="min-h-[380px] rounded-lg shadow-lg bg-yellow-400">
+                        <!-- 1st row  -->
+                        <div class="grid sm:grid-cols-12 grid-cols-1 w-full">
+                            <div class="col-span-12 min-h-[520px] rounded-lg shadow-lg bg-pink-400 w-full">
+                                <div>
+                                    <h1 class="text-9xl text-black font-bold text-center pt-20 hover:text-gray-600">
+                                        Hello
+                                    </h1>
+                                    <p class="text-2xl text-black text-justify py-10 px-20">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quasi
+                                        laudantium
+                                        quis voluptas. Aspernatur harum consectetur, doloribus, magni, sit delectus
+                                        dolores
+                                        rerum laborum corrupti nemo eos nesciunt esse sint praesentium. Lorem ipsum
+                                        dolor sit amet, consectetur adipisicing elit. Dolore quasi laudantium
+                                        quis voluptas. Aspernatur harum consectetur, doloribus, magni, sit delectus
+                                        dolores
+                                        rerum laborum corrupti nemo eos nesciunt esse sint praesentium.
+                                    </p>
                                 </div>
                             </div>
-                            <!-- child row * -->
                         </div>
-                    </div>
-                    <!-- 2nd row *  -->
+                        <!-- 1st row *  -->
 
-                </div>
-
-                <!-- 2nd col  -->
-                <div class="min-h-[920px] rounded-lg shadow-lg bg-violet-300 sm:col-span-3">
-
-                    <!-- 1st row  -->
-                    <div class="grid sm:grid-cols-12 grid-cols-1 w-full mb-5">
-                        <div class="col-span-12 min-h-[720px] rounded-lg shadow-lg bg-pink-400 w-full">
+                        <!-- 2nd row  -->
+                        <div class="grid sm:grid-cols-12 grid-cols-1 w-full">
+                            <div class="col-span-12 min-h-[400px] rounded-lg shadow-lg  w-full">
+                                <!-- child row  -->
+                                <div class="grid sm:grid-cols-3 gap-4 mt-5">
+                                    <div class="min-h-[400px] rounded-lg shadow-lg bg-lime-400">
+                                        <!-- content  -->
+                                        <div>
+                                            <h1
+                                                class="text-4xl text-black font-bold flex justify-center pt-20 hover:text-gray-600">
+                                                Hello
+                                            </h1>
+                                            <p class="text-2xl text-black text-start p-10">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quasi
+                                                laudantium
+                                            </p>
+                                        </div>
+                                        <!-- content *  -->
+                                    </div>
+                                    <div class="min-h-[400px] rounded-lg shadow-lg bg-cyan-400">
+                                        <!-- content  -->
+                                        <div>
+                                            <h1
+                                                class="text-4xl text-black font-bold text-center pt-20 hover:text-gray-600">
+                                                Hello
+                                            </h1>
+                                            <p class="text-2xl text-black flex text-center p-10">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quasi
+                                                laudantium
+                                            </p>
+                                        </div>
+                                        <!-- content *  -->
+                                    </div>
+                                    <div class="min-h-[400px] rounded-lg shadow-lg bg-yellow-400">
+                                        <!-- content  -->
+                                        <div>
+                                            <h1
+                                                class="text-4xl text-black font-bold flex justify-center pt-20 hover:text-gray-600">
+                                                Hello
+                                            </h1>
+                                            <p class="text-2xl text-black text-end  p-10">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quasi
+                                                laudantium
+                                            </p>
+                                        </div>
+                                        <!-- content *  -->
+                                    </div>
+                                </div>
+                                <!-- child row * -->
+                            </div>
                         </div>
-                    </div>
-                    <!-- 1st row *  -->
+                        <!-- 2nd row *  -->
 
-                    <!-- 2nd row  -->
-                    <div class="grid sm:grid-cols-12 grid-cols-1 w-full">
-                        <div class="col-span-12 min-h-[180px] rounded-lg shadow-lg bg-pink-400 w-full">
+                    </div>
+
+                    <!-- right col  -->
+                    <div class="min-h-[920px] rounded-lg shadow-lg  sm:col-span-3">
+
+                        <!-- 1st row  -->
+                        <div class="grid sm:grid-cols-12 grid-cols-1 w-full mb-5">
+                            <div class="col-span-12 min-h-[720px] rounded-lg shadow-lg bg-pink-400 w-full">
+
+                                <!-- chat conv -->
+                                <div class="container mt-10">
+                                    <div class="chat chat-start">
+                                        <div class="chat-bubble chat-bubble-warning hover:bg-lime-400">Tour?</div>
+                                    </div>
+                                    <div class="chat chat-end">
+                                        <div class="chat-bubble chat-bubble-info hover:bg-lime-400">You hit it right...!</div>
+                                    </div>
+                                    <div class="chat chat-start">
+                                        <div class="chat-bubble chat-bubble-accent hover:text-black hover:bg-lime-400">
+                                            Where?!
+                                        </div>
+                                    </div>
+                                    <div class="chat chat-end">
+                                        <div class="chat-bubble chat-bubble-success hover:bg-lime-400">Beach/Hill?!
+                                        </div>
+                                    </div>
+                                    <div class="chat chat-start">
+                                        <div class="chat-bubble chat-bubble-info hover:bg-lime-400">
+                                            Andamans or Himachal?!
+                                        </div>
+                                    </div>
+
+                                    <div class="chat chat-end">
+                                        <div class="chat-bubble chat-bubble-warning hover:bg-lime-400">Up to Budget.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- chat conv*  -->
+
+                            </div>
                         </div>
-                    </div>
-                    <!-- 2nd row *  -->
+                        <!-- 1st row *  -->
 
+                        <!-- 2nd row  -->
+                        <div class="grid sm:grid-cols-12 grid-cols-1 w-full">
+                            <div class="col-span-12 min-h-[180px] rounded-lg shadow-lg bg-pink-400 w-full">
+                                <div class="text-center my-20">
+                                    <!-- fa-bounce -->
+                                    <a href="#"><i class="fa-brands fa-github  text-4xl mr-6"
+                                            style="color: #000000;"></i>
+                                    </a> <a href="#"><i class="fa-brands fa-youtube  text-4xl mr-6"
+                                            style="color: #000000;"></i>
+                                    </a> <a href="#"><i class="fa-brands fa-google  text-4xl mr-6"
+                                            style="color: #000000;"></i>
+                                    </a> <a href="#"><i class="fa-brands fa-whatsapp  text-4xl mr-6"
+                                            style="color: #000000;"></i>
+                                    </a> <a href="#"><i class="fa-brands fa-instagram  text-4xl mr-6"
+                                            style="color: #000000;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2nd row *  -->
+
+                    </div>
                 </div>
             </div>
-        </div>
 
-    </section>
-</main>
+        </section>
+    </main>
 
 
 
