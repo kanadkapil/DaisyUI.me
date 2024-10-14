@@ -292,31 +292,83 @@
 
 <!--     page -->
 
-<!--     new layout  -->
-        <!-- Layout Row 1 -->
-    <div class="flex flex-col h-screen">
-        <div class="flex-grow grid sm:grid-cols-4 gap-4 p-2 sm:p-4">
-            <!-- Column 1 -->
-            <div class="min-h-[100px] rounded-lg shadow-lg bg-red-400"></div>
 
-            <!-- Column 2 -->
-            <div class="flex flex-col rounded-lg shadow-lg bg-lime-400 sm:col-span-2 h-screen">
-                <!-- row 1 -->
+    
+
+<!--     new layout  -->
+<!DOCTYPE html>
+<html lang="en" data-theme="coffee">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Layout</title>
+</head>
+
+<body>
+    <main class="flex flex-col">
+
+        <!-- Layout Row 1 -->
+        <section class="flex-grow h-screen grid sm:grid-cols-4 gap-4 p-4">
+            <!-- col 1 -->
+            <div class="min-h-[100px] rounded-lg shadow-lg bg-red-400"></div> <!-- First column: red background -->
+            
+            <!-- col 2 -->
+            <div class="flex flex-col rounded-lg shadow-lg bg-lime-400 sm:col-span-2">
+                <!-- Child container for col 2 -->
                 <div class="flex-grow flex h-1/2 gap-4 mx-4 my-4">
-                    <div class="w-1/2 rounded-lg shadow-lg bg-red-400"></div>
-                    <div class="w-1/2 rounded-lg shadow-lg bg-cyan-400"></div>
+                    <!-- Child 1: Left half of col 2 -->
+                    <div class="w-1/2 rounded-lg shadow-lg bg-red-400"></div> <!-- Red background -->
+                    
+                    <!-- Child 2: Right half of col 2 -->
+                    <div class="w-1/2 rounded-lg shadow-lg bg-cyan-400"></div> <!-- Cyan background -->
                 </div>
-                <!-- row 2 -->
+                <!-- Child container for the lower half of col 2 -->
                 <div class="h-1/2 grid gap-4 mx-4 my-4">
-                    <div class="min-h-[100px] rounded-lg shadow-lg bg-red-400 sm:col-span-2"></div>
+                    <!-- Child 3: Full width of col 2 -->
+                    <div class="min-h-[100px] rounded-lg shadow-lg bg-purple-400"></div> <!-- Purple background -->
                 </div>
             </div>
+            
+            <!-- col 3 -->
+            <div class="min-h-[100px] rounded-lg shadow-lg bg-cyan-400"></div> <!-- Third column: cyan background -->
+        </section>
+    
+        <!-- Layout Row 2 -->
+        <section class="flex-grow h-screen my-4">
+            <div class="grid sm:grid-cols-4 gap-4 p-4 h-full">
+                <!-- col 1 -->
+                <div class="min-h-[100px] rounded-lg shadow-lg bg-red-400"></div> <!-- First column: red background -->
+                
+                <!-- col 2 -->
+                <div class="flex flex-col rounded-lg shadow-lg bg-lime-400 sm:col-span-2 h-full"></div> <!-- Second column: lime background, spans two columns -->
+                
+                <!-- col 3 -->
+                <div class="min-h-[100px] rounded-lg shadow-lg bg-cyan-400"></div> <!-- Third column: cyan background -->
+            </div>
+        </section>
+    
+        <!-- Layout Row 3 -->
+        <section class="flex-grow h-screen my-4">
+            <div class="grid sm:grid-cols-4 gap-4 p-4 h-full">
+                <!-- col 1 -->
+                <div class="min-h-[100px] rounded-lg shadow-lg bg-red-400"></div> <!-- First column: red background -->
+                
+                <!-- col 2 -->
+                <div class="min-h-[100px] rounded-lg shadow-lg bg-cyan-400"></div> <!-- Second column: cyan background -->
+                
+                <!-- col 3 -->
+                <div class="flex flex-col rounded-lg shadow-lg bg-lime-400 sm:col-span-2 h-full"></div> <!-- Third column: lime background, spans two columns -->
+            </div>
+        </section>
+    
+    </main>
+    
+</body>
 
-
-            <!-- Column 3 -->
-            <div class="min-h-[100px] rounded-lg shadow-lg bg-cyan-400"></div>
-        </div>
-    </div>
+</html>
 
 
 
