@@ -14,17 +14,14 @@
 
 <body>
 
-    <!-- navbar  -->
-    <nav class="bg-white border-gray-200 dark:bg-gray-900 fixed top-0 w-full z-50">
+    <!-- Navbar -->
+    <nav class="bg-white border-gray-200 dark:bg-gray-900 fixed top-0 w-full z-50 shadow">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <h1 class="text-4xl font-bold">Don Layouts</h1>
             </a>
             <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                <button type="button"
-                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get
-                    started</button>
-                <button data-collapse-toggle="navbar-cta" type="button"
+                <button id="navbar-toggle" type="button"
                     class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                     aria-controls="navbar-cta" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
@@ -35,231 +32,157 @@
                     </svg>
                 </button>
             </div>
-            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+            <div class="hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
                 <ul
                     class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     <li>
                         <a href="#"
-                            class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500"
+                            class="block py-2 px-3 text-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500"
                             aria-current="page">Home</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700">About</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700">Services</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- navbar *  -->
 
     <main class="mt-20">
         <section>
             <div class="mx-10">
                 <div class="my-4 gap-4 grid sm:grid-cols-12 grid-cols-1">
-                    <!-- left col  -->
+                    <!-- Left Column -->
                     <div class="min-h-[920px] rounded-lg shadow-lg sm:col-span-9">
 
-                        <!-- 1st row  -->
+                        <!-- 1st Row -->
                         <div class="grid sm:grid-cols-12 grid-cols-1 w-full">
                             <div class="col-span-12 min-h-[520px] rounded-lg shadow-lg bg-pink-400 w-full">
-                                <div>
-                                    <h1 class="text-9xl text-black font-bold text-center pt-20 hover:text-gray-600">
-                                        Hello
-                                    </h1>
-                                    <p class="text-2xl text-black text-justify py-20 px-16 sm:px-20">
+                                <div class="text-center pt-20">
+                                    <h1 class="text-9xl text-black font-bold hover:text-gray-600">Hello</h1>
+                                    <p class="text-2xl text-black text-justify py-20 px-4 sm:px-20">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quasi
-                                        laudantium
-                                        quis voluptas. Aspernatur harum consectetur, doloribus, magni, sit delectus
-                                        dolores
-                                        rerum laborum corrupti nemo eos nesciunt esse sint praesentium. Lorem ipsum
-                                        dolor sit amet, consectetur adipisicing elit. Dolore quasi laudantium
-                                        quis voluptas. Aspernatur harum consectetur, doloribus, magni, sit delectus
-                                        dolores
-                                        rerum laborum corrupti nemo eos nesciunt esse sint praesentium.
+                                        laudantium quis voluptas. Aspernatur harum consectetur, doloribus, magni, sit
+                                        delectus dolores rerum laborum corrupti nemo eos nesciunt esse sint praesentium.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <!-- 1st row *  -->
+                        <!-- 1st Row End -->
 
-                        <!-- 2nd row  -->
+                        <!-- 2nd Row -->
                         <div class="grid sm:grid-cols-12 grid-cols-1 w-full">
-                            <div class="col-span-12 min-h-[400px] rounded-lg shadow-lg  w-full">
-                                <!-- child row  -->
+                            <div class="col-span-12 min-h-[400px] rounded-lg shadow-lg w-full">
                                 <div class="grid sm:grid-cols-3 gap-4 mt-5">
-                                    <div class="min-h-[400px] rounded-lg shadow-lg bg-lime-400">
-                                        <!-- content  -->
-                                        <div>
-                                            <h1
-                                                class="text-4xl text-black font-bold flex justify-center pt-20 hover:text-gray-600">
-                                                Hello
-                                            </h1>
-                                            <p class="text-2xl text-black text-start p-10">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quasi
-                                                laudantium
-                                            </p>
-                                        </div>
-                                        <!-- content *  -->
+                                    <div
+                                        class="min-h-[400px] rounded-lg shadow-lg bg-lime-400 flex flex-col items-center">
+                                        <h1 class="text-4xl text-black font-bold pt-20 hover:text-gray-600">Hello</h1>
+                                        <p class="text-2xl text-black text-center p-10">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quasi
+                                            laudantium.
+                                        </p>
                                     </div>
-                                    <div class="min-h-[400px] rounded-lg shadow-lg bg-cyan-400">
-                                        <!-- content  -->
-                                        <div>
-                                            <h1
-                                                class="text-4xl text-black font-bold text-center pt-20 hover:text-gray-600">
-                                                Hello
-                                            </h1>
-                                            <p class="text-2xl text-black flex text-center p-10">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quasi
-                                                laudantium
-                                            </p>
-                                        </div>
-                                        <!-- content *  -->
+                                    <div
+                                        class="min-h-[400px] rounded-lg shadow-lg bg-cyan-400 flex flex-col items-center">
+                                        <h1 class="text-4xl text-black font-bold pt-20 hover:text-gray-600">Hello</h1>
+                                        <p class="text-2xl text-black text-center p-10">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quasi
+                                            laudantium.
+                                        </p>
                                     </div>
-                                    <div class="min-h-[400px] rounded-lg shadow-lg bg-yellow-400">
-                                        <!-- content  -->
-                                        <div>
-                                            <h1
-                                                class="text-4xl text-black font-bold flex justify-center pt-20 hover:text-gray-600">
-                                                Hello
-                                            </h1>
-                                            <p class="text-2xl text-black text-end  p-10">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quasi
-                                                laudantium
-                                            </p>
-                                        </div>
-                                        <!-- content *  -->
+                                    <div
+                                        class="min-h-[400px] rounded-lg shadow-lg bg-yellow-400 flex flex-col items-center">
+                                        <h1 class="text-4xl text-black font-bold pt-20 hover:text-gray-600">Hello</h1>
+                                        <p class="text-2xl text-black text-center p-10">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quasi
+                                            laudantium.
+                                        </p>
                                     </div>
                                 </div>
-                                <!-- child row * -->
                             </div>
                         </div>
-                        <!-- 2nd row *  -->
+                        <!-- 2nd Row End -->
 
                     </div>
 
-                    <!-- right col  -->
-                    <div class="min-h-[920px] rounded-lg shadow-lg  sm:col-span-3">
+                    <!-- Right Column -->
+                    <div class="min-h-[920px] rounded-lg shadow-lg sm:col-span-3">
 
-                        <!-- 1st row  -->
+                        <!-- 1st Row -->
                         <div class="grid sm:grid-cols-12 grid-cols-1 w-full mb-5">
                             <div class="col-span-12 min-h-[720px] rounded-lg shadow-lg bg-pink-400 w-full">
-
-                                <!-- chat conv -->
                                 <div class="container mt-10">
                                     <div class="chat chat-start">
                                         <div class="chat-bubble chat-bubble-warning hover:bg-lime-400">Tour?</div>
                                     </div>
                                     <div class="chat chat-end">
-                                        <div class="chat-bubble chat-bubble-info hover:bg-lime-400">You hit it right...!</div>
+                                        <div class="chat-bubble chat-bubble-info hover:bg-lime-400">You hit it right...!
+                                        </div>
                                     </div>
                                     <div class="chat chat-start">
                                         <div class="chat-bubble chat-bubble-accent hover:text-black hover:bg-lime-400">
-                                            Where?!
-                                        </div>
+                                            Where?!</div>
                                     </div>
                                     <div class="chat chat-end">
                                         <div class="chat-bubble chat-bubble-success hover:bg-lime-400">Beach/Hill?!
                                         </div>
                                     </div>
                                     <div class="chat chat-start">
-                                        <div class="chat-bubble chat-bubble-info hover:bg-lime-400">
-                                            Andamans or Himachal?!
-                                        </div>
+                                        <div class="chat-bubble chat-bubble-info hover:bg-lime-400">Andamans or
+                                            Himachal?!</div>
                                     </div>
-
                                     <div class="chat chat-end">
                                         <div class="chat-bubble chat-bubble-warning hover:bg-lime-400">Up to Budget.
                                         </div>
                                     </div>
                                 </div>
-                                <!-- chat conv*  -->
-
                             </div>
                         </div>
-                        <!-- 1st row *  -->
+                        <!-- 1st Row End -->
 
-                        <!-- 2nd row  -->
+                        <!-- 2nd Row -->
                         <div class="grid sm:grid-cols-12 grid-cols-1 w-full">
                             <div class="col-span-12 min-h-[180px] rounded-lg shadow-lg bg-pink-400 w-full">
                                 <div class="text-center my-20">
-                                    <!-- fa-bounce -->
-                                    <a href="#"><i class="fa-brands fa-github  text-4xl mr-6"
-                                            style="color: #000000;"></i>
-                                    </a> <a href="#"><i class="fa-brands fa-youtube  text-4xl mr-6"
-                                            style="color: #000000;"></i>
-                                    </a> <a href="#"><i class="fa-brands fa-google  text-4xl mr-6"
-                                            style="color: #000000;"></i>
-                                    </a> <a href="#"><i class="fa-brands fa-whatsapp  text-4xl mr-6"
-                                            style="color: #000000;"></i>
-                                    </a> <a href="#"><i class="fa-brands fa-instagram  text-4xl mr-6"
-                                            style="color: #000000;"></i>
-                                    </a>
+                                    <a href="#"><i class="fa-brands fa-github text-4xl mr-6"
+                                            style="color: #000000;"></i></a>
+                                    <a href="#"><i class="fa-brands fa-youtube text-4xl mr-6"
+                                            style="color: #000000;"></i></a>
+                                    <a href="#"><i class="fa-brands fa-google text-4xl mr-6"
+                                            style="color: #000000;"></i></a>
+                                    <a href="#"><i class="fa-brands fa-whatsapp text-4xl mr-6"
+                                            style="color: #000000;"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram text-4xl mr-6"
+                                            style="color: #000000;"></i></a>
                                 </div>
                             </div>
                         </div>
-                        <!-- 2nd row *  -->
+                        <!-- 2nd Row End -->
 
                     </div>
                 </div>
             </div>
-
         </section>
     </main>
 
-
-
     <div class="divider divider-primary my-20">💩</div>
 
-    <!-- non equal -->
-
-    <div class="mx-10">
-        <div class="my-4 gap-4 grid sm:grid-cols-12 grid-cols-1">
-            <div class="min-h-[100px] rounded-lg shadow-lg bg-amber-400 sm:col-span-4">
-            </div>
-            <div class="min-h-[100px] rounded-lg shadow-lg bg-violet-400 sm:col-span-8">
-            </div>
-        </div>
-    </div>
-
-
-    <!-- equal portion  -->
-    <div>
-        <div class="grid sm:grid-cols-2 gap-4 my-10 mx-10 ">
-            <div class="min-h-[100px] rounded-lg shadow-lg bg-red-400">
-            </div>
-            <div class="min-h-[100px] rounded-lg shadow-lg bg-cyan-400">
-
-            </div>
-        </div>
-
-        <div class="grid sm:grid-cols-3 gap-4 my-10 mx-10 ">
-            <div class="min-h-[100px] rounded-lg shadow-lg bg-lime-400">
-            </div>
-            <div class="min-h-[100px] rounded-lg shadow-lg bg-amber-400">
-            </div>
-            <div class="min-h-[100px] rounded-lg shadow-lg bg-violet-400">
-            </div>
-        </div>
-    </div>
-
-    <div class="mx-10 my-4 gap-4 grid sm:grid-cols-12 grid-cols-1">
-        <div class="  min-h-[100px] rounded-lg shadow-lg bg-amber-400 sm:col-span-2 md:block hidden">
-        </div>
-        <div class=" min-h-[100px] rounded-lg shadow-lg bg-violet-400 sm:col-span-8">
-        </div>
-        <div class=" min-h-[100px] rounded-lg shadow-lg bg-pink-400 sm:col-span-2 sm:block hidden">
-        </div>
-    </div>
-
+    <!-- JavaScript for Toggle Functionality -->
+    <script>
+        document.getElementById('navbar-toggle').addEventListener('click', function () {
+            const navbar = document.getElementById('navbar-cta');
+            navbar.classList.toggle('hidden');
+        });
+    </script>
 
 </body>
 
