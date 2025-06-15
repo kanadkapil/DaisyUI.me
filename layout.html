@@ -8,6 +8,58 @@
     <title>Layout</title>
 </head>
 <body>
+
+
+
+
+<!--     new edition  -->
+        <br>
+
+    <h1 class="text-3xl bg-amber-100 font-bold underline">
+        Hello world!
+    </h1>
+
+    <h1 class="text-6xl">Equal layout h-screen</h1>
+    <div class="grid gap-4 m-4 sm:grid-cols-2 grid-cols-2 h-screen">
+        <div class="rounded-lg bg-red-200 shadow-2xl min-h-[100px]">1</div>
+        <div class="rounded-lg bg-blue-200 shadow-2xl min-h-[100px]">2</div>
+    </div>
+
+    <h1 class="text-6xl">Equal layout</h1>
+    <div class="grid gap-4 m-4 sm:grid-cols-2 grid-cols-2">
+        <div class="rounded-lg bg-green-200 shadow-2xl min-h-[100px]">1</div>
+        <div class="rounded-lg bg-purple-200 shadow-2xl min-h-[100px]">2</div>
+    </div>
+
+    <br>
+
+    <div class="grid gap-4 m-4 sm:grid-cols-3 grid-cols-1">
+        <div class="rounded-lg bg-pink-200 shadow-2xl min-h-[100px]">1</div>
+        <div class="rounded-lg bg-yellow-200 shadow-2xl min-h-[100px]">2</div>
+        <div class="rounded-lg bg-cyan-200 shadow-2xl min-h-[100px]">3</div>
+    </div>
+
+    <br>
+    <h1 class="text-6xl">Non - Equal layout</h1>
+    <div class="grid gap-4 m-4 sm:grid-cols-12 grid-cols-1">
+        <div class="rounded-lg sm:col-span-3 bg-indigo-200 shadow-2xl min-h-[100px]">1</div>
+        <div class="rounded-lg sm:col-span-8 bg-lime-200 shadow-2xl min-h-[100px]">2</div>
+        <div class="rounded-lg sm:col-span-1 bg-rose-200 shadow-2xl min-h-[100px]">3</div>
+    </div>
+    <h1 class="text-6xl">Hidden element</h1>
+    <div class="grid gap-4 m-4 sm:grid-cols-12 grid-cols-1">
+        <div class="rounded-lg sm:col-span-3 bg-sky-200 shadow-2xl min-h-[100px] hidden sm:block">1</div>
+
+        <!-- col-span-8 when 3rd block is shown, col-span-9 when hidden (below lg) -->
+        <div class="rounded-lg bg-orange-200 shadow-2xl min-h-[100px]
+                    sm:col-span-9 lg:col-span-8">
+            2
+        </div>
+
+        <div class="rounded-lg sm:col-span-1 bg-fuchsia-200 shadow-2xl min-h-[100px] hidden lg:block">3</div>
+    </div>
+    <br>
+<!--     new edition  -->
     <!-- test  -->
     <div class="">
         <div class="grid sm:grid-cols-2 gap-4 my-10 mx-10 ">
